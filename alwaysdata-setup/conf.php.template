@@ -1,0 +1,64 @@
+<?php
+/**
+ * Template konfigurasi database untuk Alwaysdata
+ * 
+ * Copy file ini ke htdocs/conf/conf.php setelah instalasi
+ * dan edit sesuai dengan kredensial database Alwaysdata Anda
+ */
+
+// Database configuration for Alwaysdata
+$dolibarr_main_url_root='https://YOUR_DOMAIN.alwaysdata.net';
+$dolibarr_main_document_root='/home/YOUR_USERNAME/www';
+$dolibarr_main_url_root_alt='/dolibarr';
+$dolibarr_main_document_root_alt='/home/YOUR_USERNAME/www/dolibarr';
+$dolibarr_main_data_root='/home/YOUR_USERNAME/documents/dolibarr';
+$dolibarr_main_db_host='mysql-YOUR_USERNAME.alwaysdata.net';
+$dolibarr_main_db_port='3306';
+$dolibarr_main_db_name='YOUR_DATABASE_NAME';
+$dolibarr_main_db_prefix='llx_';
+$dolibarr_main_db_user='YOUR_USERNAME';
+$dolibarr_main_db_pass='YOUR_DATABASE_PASSWORD';
+$dolibarr_main_db_type='mysqli';
+$dolibarr_main_db_character_set='utf8';
+$dolibarr_main_db_collation='utf8_unicode_ci';
+
+// Security
+$dolibarr_main_authentication='dolibarr';
+$dolibarr_main_force_https='1'; // Force HTTPS
+$dolibarr_main_restrict_os_commands='1';
+
+// Performance
+$dolibarr_main_use_advanced_perms='0';
+$dolibarr_main_optimize_menu='1';
+
+// Session and cookies
+$dolibarr_session_name='DOLISESSID_'.md5(__FILE__);
+
+// File uploads
+$dolibarr_maxfilesize_uploaded='20971520'; // 20MB
+$dolibarr_main_disable_file_antivirus='1';
+
+// Logging
+$dolibarr_syslog_level='6'; // LOG_INFO
+$dolibarr_syslog_facility='LOG_LOCAL0';
+
+// Instance identification (change this)
+$dolibarr_main_instance_unique_id='YOUR_UNIQUE_ID_HERE';
+$dolibarr_main_cookie_cryptkey='YOUR_CRYPTO_KEY_HERE';
+
+// Timezone
+date_default_timezone_set('Asia/Jakarta'); // Adjust according to your timezone
+
+// Email configuration (for notifications)
+// Uncomment and configure if needed
+/*
+$dolibarr_main_mail_sendmode='smtp';
+$dolibarr_main_mail_smtp_server='smtp.alwaysdata.net';
+$dolibarr_main_mail_smtp_port='587';
+$dolibarr_main_mail_smtp_auth_type='LOGIN';
+$dolibarr_main_mail_smtp_user='YOUR_EMAIL@YOUR_DOMAIN';
+$dolibarr_main_mail_smtp_pass='YOUR_EMAIL_PASSWORD';
+*/
+
+// End of template
+?>
