@@ -56,3 +56,41 @@ if (empty($dolibarr_nocache)) {
 
 print '/* Here, the content of the common custom CSS defined into Home - Setup - Display - CSS'."*/\n";
 print getDolGlobalString('MAIN_IHM_CUSTOM_CSS');
+
+/* Custom CSS untuk Enterprise ERP - Hide version dan custom styling */
+print "
+/* Hide Dolibarr version text di login */
+.login-dolibarr-logo-version {
+    display: none !important;
+}
+
+.version-text {
+    display: none !important;
+}
+
+.dolibarr-version {
+    display: none !important;
+}
+
+/* Hide version info di footer */
+.center.version {
+    display: none !important;
+}
+
+/* Custom styling untuk logo */
+.loginboxlogo img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Custom header styling */
+.tmenu {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Custom login box */
+.login_block {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+";
