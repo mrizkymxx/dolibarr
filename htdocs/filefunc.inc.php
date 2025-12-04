@@ -33,7 +33,7 @@
  */
 
 
-define('DOL_MINOR_VERSION', '0.0');
+define('DOL_MINOR_VERSION', '1.0');
 
 if (!defined('DOL_APPLICATION_TITLE')) {
 	define('DOL_APPLICATION_TITLE', 'Enterprise ERP');
